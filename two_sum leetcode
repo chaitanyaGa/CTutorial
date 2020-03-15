@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        
+        int rem = 0;
+        vector<int> ret;
+        for (vector<int>::iterator itr = nums.begin();itr != nums.end(); itr++ )
+        {
+            for (vector<int>::iterator itr2 = itr+1;itr2 != nums.end(); itr2++ )
+            {
+                if (target - *itr == *itr2)
+                {
+                    ret.push_back(itr-nums.begin());
+                    ret.push_back(itr2-nums.begin());
+                    return ret;  
+                }
+            }
+            //if(target-)
+        }
+    }
+};
